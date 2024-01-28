@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Animated Flex Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos para el video de fondo */
+        .bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        /* Aplica Montserrat a todo el cuerpo del documento */
+        body {
+            margin: 0; /* Elimina los márgenes por defecto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% de la altura de la ventana del navegador */
+        }
+
+        /* Estilos para el título con efecto de escritura */
+        .page-title {
+            color: #fff;
+            font-size: 2em;
+            white-space: nowrap;
+            overflow: hidden; /* Oculta el texto que "sale" del contenedor */
+            border-right: .15em solid white; /* Simula el cursor de escritura */
+            width: 0;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 20px;
+            max-width: 25%; /* Permite que el contenedor crezca hasta el 100% del texto */
+        }
+
+        /* Animación que simula la escritura */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 90%; }
+        }
+
+        /* Animación del cursor de escritura */
+        @keyframes blink-caret {
+            50% { border-color: transparent; }
+        }
+
+        /* Aplicación de las animaciones al título */
+        .page-title {
+            animation: typing 5s steps(40, end) forwards, blink-caret .75s step-end infinite;
+        }
+    </style>
 </head>
 <body>
+    <video class="bg-video" autoplay loop muted>
+        <source src="/Y2meta.app - Galaxy Motion Background Video [HD] ~ FREE.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <h1 class="page-title">Choose your image!</h1>
+
     <div class="wrapper">
         <div class="container">
             <input type="radio" name="slide" id="c1" checked>
@@ -14,9 +71,8 @@
                 <div class="row">
                     <div class="icon">1</div>
                     <div class="description">
-                        <h4>Winter</h4>
-                        <p>Winter has so much to offer -
-                         creative activities</p>
+                        <h4>Space</h4>
+                        <p>Space</p>
                     </div>
                 </div>
             </label>
@@ -25,9 +81,8 @@
                 <div class="row">
                     <div class="icon">2</div>
                     <div class="description">
-                        <h4>Digital Technology</h4>
-                        <p>Gets better every day -
-                         stay tuned</p>
+                        <h4>Space</h4>
+                        <p>Space</p>
                     </div>
                 </div>
             </label>
@@ -36,8 +91,8 @@
                 <div class="row">
                     <div class="icon">3</div>
                     <div class="description">
-                        <h4>Globalization</h4>
-                        <p>Help people all over the world</p>
+                        <h4>Space</h4>
+                        <p>Space</p>
                     </div>
                 </div>
             </label>
@@ -46,9 +101,8 @@
                 <div class="row">
                     <div class="icon">4</div>
                     <div class="description">
-                        <h4>New technologies</h4>
-                        <p>Space engineering becomes
-                         more and more advanced</p>
+                        <h4>Space</h4>
+                        <p>Space</p>
                     </div>
                 </div>
             </label>

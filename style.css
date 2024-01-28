@@ -91,14 +91,14 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./img1.jpeg');
+    background-image: url('https://i.ibb.co/Bgsjs1y/giant-stars-4k-space-q03wbnsie2ul47hh.jpg');
 }
 .card[for="c2"] {
-    background-image: url('./img2.jpeg');
+    background-image: url('https://i.ibb.co/YcycHSQ/1694483862-0c7f17d7d7c1309114163dac66c840099acdfb01e143df79a0174b2c99e56511-d-640x360.jpg');
 }
 .card[for="c3"] {
-    background-image: url('./img3.jpeg');
+    background-image: url('https://i.ibb.co/vXfwQ80/182c6c1b1482126ca86262ed1aea026b.png');
 }
 .card[for="c4"] {
-    background-image: url('./img4.jpeg');
+    background-image: url('https://i.ibb.co/Gpmw98J/diego-ph-f-Iq0t-ET6llw-unsplash.jpg');
 }
